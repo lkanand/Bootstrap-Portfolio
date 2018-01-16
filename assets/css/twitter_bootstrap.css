@@ -3,15 +3,19 @@
 	padding: 0;
 }
 
-.navbar{
+.heading{
 	border-bottom: 1px solid #ccc;
 	margin-bottom: 0rem;
 }
 
-h1{
-	font-family: Georgia, Times, Times New Roman, serif;
-	color: white;
+h1, h2, h3{
+	font-family: Georgia, Times, Times New Roman serif;
 	font-weight: 600;
+}
+
+
+h1{
+	color: white;
 	font-size: 3rem;
 	background-color: #4aaaa5;
 	padding: 3rem;
@@ -21,8 +25,6 @@ h1{
 }
 
 h2, h3{
-	font-family: Georgia, Times, Times New Roman, serif;
-	font-weight: 600;
 	color: #4aaaa5;
 }
 
@@ -45,32 +47,43 @@ h3{
 	border-bottom: 2px solid #ddd;
 }
 
-.nav{
-	font-family: 'Arial', 'Helvetica Neue', Helvetica, sans-serif;
-	font-size: 1.6rem;
-	margin-top: 2.5rem;
-	margin-right: 3rem;
+.navbar{
+	height: 9rem;
+	line-height: 9rem;
+	padding-right: 3rem;
+	margin-bottom: 0rem;
+	text-align: right;
 }
 
-.nav a{
-	color: #b1b1b1;
+ul{
+	list-style-type: none;
 }
+
+li{
+	display: inline;
+	padding: 1px 15px;
+}
+
+.navbar a{
+	color: #b1b1b1;
+	font-family: 'Arial', 'Helvetica Neue', Helvetica, sans-serif; 
+}
+
 
 #middle_link{
 	border-right: 1px solid #f4f4f4;
 	border-left: 1px solid #f4f4f4;
 }
 
-
 #content{
 	width: 100%;
 	overflow: auto;
 	background-image: url("../images/dust_scratches.jpg");
 	padding-top: 4rem;
-	margin-bottom: 0rem;
+	padding-bottom: 4rem;
 }
 
-#about_me, #connect_with_me{
+#main_content, #connect_with_me{
 	overflow: auto;
 	border: 1px solid #dddddd;
 	background-color: white;
@@ -78,7 +91,7 @@ h3{
 	margin-right: 3rem;
 }
 
-#about_me{
+#main_content{
 	padding-bottom: 2rem;
 }
 
@@ -100,9 +113,127 @@ h3{
 	padding-left: 3rem;
 }
 
+.logo-container{
+	padding-left: .8vw;
+	padding-right: .8vw;
+}
+
 .contact_logos{
 	margin-left: 2rem;
 	margin-right: 2rem;
 }
+
+.logos{
+	width: 100%;
+}
+
+footer{
+	background-color: #666666;
+	color: #c9c9c9;
+	font-weight: 200;
+	font-family: "Arial", "Helvetica Neue", "Helvetica", sans-serif;
+	font-size: 12px;
+	text-align: center;
+	padding-top: 35px;
+	padding-bottom: 35px;
+	border-top: 9px solid #4aaaa5;
+}
+
+form{
+	color: #777777;
+	font-family: "Arial", "Helvetica Neue", "Helvetica", sans-serif;
+	font-size: 18px;
+	margin-left: 3rem;
+	margin-right: 3rem;
+}
+
+#name, #email, #message {
+	margin-top: 10px;
+	margin-bottom: 20px;
+	width: 100%;
+	height: 6vh;
+	font-family: "Arial", "Helvetica Neue", "Helvetica", sans-serif;
+	font-size: 16px;
+	color: #777777;
+	padding-left: 10px;
+	border: 1px solid #dddddd;
+}
+
+input::placeholder{
+	color: #dddddd;
+}
+
+#message {
+	height: 200px;
+	padding-top: 10px;
+}
+
+.submit{
+	color: white;
+	background-color: #4aaaa5;
+	border: none;
+	font-family: "Arial", "Helvetica Neue", "Helvetica", sans-serif;
+	font-size: 18px;
+	padding: 10px 25px;
+	margin-bottom: 25px;
+}
+
+.submit:hover{
+	box-shadow: 0 6px 16px 0 rgba(0,0,0,0.24);
+	cursor: pointer;
+}
+
+.port-placeholder-row{
+	margin-left: 3rem;
+	margin-right: 3rem;
+} 
+
+.port-placeholder{
+	padding-left: 0rem;
+	padding-right: 0rem;
+}
+
+.port-placeholder-row img{
+	width: 100%;
+	margin-bottom: 5vw;
+}
+
+.caption{
+	color: white;
+	background-color: #4aaaa5;
+	font-family: Georgia, Times, Times New Roman, serif;
+	font-weight: 300;
+	text-align: center;
+	font-size: 16px;
+	position: absolute;
+	bottom: 5.5vw;
+	padding-top: 1vw;
+	padding-bottom: 1vw;
+	width: 100%;
+}
+
+@media (max-width: 991px){
+	#main_content{
+		margin-bottom: 5vh;
+	}
+
+	.logo-container{
+		padding-left: 3vw;
+		padding-right: 3vw;
+	}
+
+	h1{
+		width: 100%;
+		margin-left: 0rem;
+		text-align: center;
+		padding-left: 0rem;
+		padding-right: 0rem;
+	}
+
+	.navbar{
+		text-align: center;
+	}
+}
+
 
 
