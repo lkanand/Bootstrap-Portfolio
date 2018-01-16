@@ -17,6 +17,7 @@ h1{
 	padding: 3rem;
 	margin-left: 4rem;
 	margin-bottom: 0rem;
+	margin-top: 0rem;
 }
 
 h2, h3{
@@ -47,7 +48,7 @@ h3{
 .nav{
 	font-family: 'Arial', 'Helvetica Neue', Helvetica, sans-serif;
 	font-size: 1.6rem;
-	margin-top: 4.5rem;
+	margin-top: 2.5rem;
 	margin-right: 3rem;
 }
 
@@ -73,17 +74,15 @@ h3{
 	overflow: auto;
 	border: 1px solid #dddddd;
 	background-color: white;
+	margin-left: 4rem;
+	margin-right: 3rem;
 }
 
 #about_me{
-	margin-left: 4rem;
-	margin-right: 3rem;
 	padding-bottom: 2rem;
 }
 
 #connect_with_me{
-	margin-left: 4rem;
-	margin-right: 3rem;
 	padding-bottom: 3rem;
 }
 
